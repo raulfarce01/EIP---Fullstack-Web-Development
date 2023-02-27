@@ -15,6 +15,7 @@ header div {
   background-image: url(../img/cachorro.jpeg);
   height: 200px;
   background-position: 50% 20%;
+  background-repeat: no-repeat;
   color: #fff;
   display: flex;
   justify-content: center;
