@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+main,
+footer {
+  background-color: rgb(255, 177, 135);
+  width: 98vw;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  display: block;
+  width: 200px;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 1%;
+}
+
+.bigRadioContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  margin-bottom: 0.5%;
+}
+
+.policies {
+  margin-bottom: 1%;
+}
+
+textarea {
+  padding-left: 5px;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 75px;
+  height: 30px;
+}
+
+input[type="submit"] {
+  background-color: white;
+}
+
+input[type="reset"] {
+  background-color: red;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background-color: rgb(255, 71, 71);
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(135, 135, 135);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

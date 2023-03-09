@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <meta
+      name="description"
+      content="
+      Formulario de registro para nuestra aplicación"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <form
+        action="/procesamiento-datos"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Raúl" />
+
+        <label for="apellido1">Primer Apellido: </label>
+        <input
+          type="text"
+          name="apellido1"
+          id="apellido1"
+          placeholder="Fernández"
+        />
+
+        <label for="apellido2">Segundo Apellido: </label>
+        <input type="text" name="apellido2" id="apellido2" placeholder="Arce" />
+
+        <label for="email">Correo Electrónico: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="pepitodelospalotes@hotmail.com"
+        />
+
+        <label for="ciudad">Ciudad: </label>
+        <select name="ciudad" id="ciudad" multiple size="4">
+          <optgroup label="Despeñaperro pa' riba">
+            <option value="madrid">Madriz</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="valencia">Valencia</option>
+            <option value="coruña" selected>La Coruña</option>
+          </optgroup>
+          <optgroup label="Despeñaperro pa' bajo">
+            <option value="sevilla">Sevilla</option>
+            <option value="malaga">Málaga</option>
+          </optgroup>
+        </select>
+
+        <div class="bigRadioContainer">
+          <div class="radioContainer">
+            <input type="radio" name="genero" id="hombre" value="hombre" />
+            <label for="hombre">Hombre</label>
+          </div>
+
+          <div class="radioContainer">
+            <input type="radio" name="genero" id="mujer" value="mujer" />
+            <label for="mujer">Mujer</label>
+          </div>
+        </div>
+
+        <div class="policies">
+          <input
+            type="checkbox"
+            name="policies"
+            id="policies"
+            value="policies"
+            class="policies"
+            required
+          />
+          <label for="policies"
+            >Acepto la política de privacidad y los términos y
+            condiciones</label
+          >
+        </div>
+
+        <textarea name="comentario" id="comentario" cols="30" rows="10">
+Comentario...</textarea
+        >
+
+        <div class="formButtons">
+          <input
+            type="submit"
+            value="submit"
+            class="submitButton"
+            id="submitButton"
+          />
+          <input
+            type="reset"
+            value="reset"
+            class="resetButton"
+            id="resetButton"
+          />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <address>Calle de la esquina n1 Piso de arriba</address>
+    </footer>
+    <script src="./js/correoVerify.js"></script>
+  </body>
+</html>
