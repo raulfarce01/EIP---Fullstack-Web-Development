@@ -66,6 +66,12 @@ th {
     text-align: center;
 }
 
+.media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 video,
 iframe {
     display: block;
