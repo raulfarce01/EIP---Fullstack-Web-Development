@@ -15,7 +15,6 @@ body {
 }
 
 nav {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +58,6 @@ h2 {
 }
 
 .content {
-    width: 100vw;
     height: 60vh;
     display: flex;
     justify-content: center;

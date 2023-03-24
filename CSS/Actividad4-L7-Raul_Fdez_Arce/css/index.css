@@ -1,46 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 body {
-    background-image: url(../assets/imgs/kekw.jpg);
-    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(35, 35, 94);
+    color: whitesmoke;
+    padding: 10px 0;
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    width: 200px;
+    color: whitesmoke;
+    margin-left: 15px;
+}
+
+h1 {
+    display: inline;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+h2 {
+    display: inline;
+}
+
+.hamburguesa {
+    border: 1px solid grey;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 30px;
+    font-size: 1.3em;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.content {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-header,
-main {
+.content p {
+    font-size: 1.3em;
+    width: 50%;
     text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding: 1%;
 }
 
-header {
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buttons button:first-child {
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px 40px;
+}
+
+.buttons button:nth-child(2) {
+    background-color: gray;
+    color: aliceblue;
+    padding: 10px 40px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.imgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
     padding: 10px;
-    color: rgb(255, 111, 212);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border: 5px;
 }
 
-p {
+.thumbnail:nth-child(2) .imgContainer img {
+    width: 100%;
+}
+
+.contentThumb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.buttonsThumbnails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.time {
+    font-style: italic;
+}
+
+.viewEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view,
+.edit {
+    margin: 0;
+    background-color: transparent;
+}
+
+.view {
     padding: 5px;
-    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid grey;
+    /* border-left: 1px solid grey;
+    border-bottom: 1px solid grey; */
 }
 
-.botonsito {
-    background-color: pink;
-    color: black;
-    border: 1px solid black;
-    height: 30px;
-    width: 115px;
-    border-radius: 5px;
-}
-
-.botonsito:hover {
-    background-color: rgb(255, 107, 131);
-    box-shadow: inset 1px 1px 5px;
+.edit {
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
