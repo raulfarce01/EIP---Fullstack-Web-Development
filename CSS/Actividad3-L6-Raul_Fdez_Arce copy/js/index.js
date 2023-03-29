@@ -11,3 +11,4 @@ function horaConstante() {
 };
 
 setInterval(horaConstante, 1000);
+//setTimeout(horaConstante, 1000);
