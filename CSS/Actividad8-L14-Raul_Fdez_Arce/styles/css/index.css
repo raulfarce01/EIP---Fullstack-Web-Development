@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+main .thumbnails .col .thumbnail .contentThumb .buttonsThumbnails .viewEdit, main .thumbnails .col .thumbnail .imgContainer, main .content, body .hamburguesa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 35, 94);
+  color: whitesmoke;
+  padding: 10px 0;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+}
+body nav h2 {
+  display: inline;
+}
+body .hamburguesa {
+  border: 1px solid gray;
+  width: 30px;
+  font-size: 1.3em;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  width: 200px;
+  color: whitesmoke;
+  margin-left: 15px;
+}
+
+main h1 {
+  display: inline;
+  font-weight: 400;
+  font-size: 2em;
+}
+main h2 {
+  display: inline;
+}
+main .content {
+  height: 60vh;
+  flex-direction: column;
+}
+main .content p {
+  font-size: 1.3em;
+  width: 50%;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  padding: 1%;
+}
+main .content .buttons {
+  margin-top: 10px;
+}
+main .content .buttons button {
+  border: 0;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+main .content .buttons button:first-child {
+  background-color: blue;
+  color: aliceblue;
+  padding: 10px 40px;
+}
+main .content .buttons button:nth-child(2) {
+  background-color: gray;
+  color: aliceblue;
+  padding: 10px 40px;
+}
+main .thumbnails {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+main .thumbnails .col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .thumbnails .col .thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+main .thumbnails .col .thumbnail .imgContainer {
+  width: 100%;
+  background-color: gray;
+  padding: 10px;
+  border: 5px;
+}
+main .thumbnails .col .thumbnail .contentThumb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+main .thumbnails .col .thumbnail .contentThumb .buttonsThumbnails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+main .thumbnails .col .thumbnail .contentThumb .buttonsThumbnails .time {
+  font-style: italic;
+}
+main .thumbnails .col .thumbnail .contentThumb .buttonsThumbnails .viewEdit .view,
+main .thumbnails .col .thumbnail .contentThumb .buttonsThumbnails .viewEdit .edit {
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+main .thumbnails .col .thumbnail .contentThumb .buttonsThumbnails .viewEdit .view {
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid gray;
+  /* border-left: 1px solid $gris;
+  border-bottom: 1px solid $gris; */
+}
+main .thumbnails .col .thumbnail .contentThumb .buttonsThumbnails .viewEdit .edit {
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}/*# sourceMappingURL=index.css.map */

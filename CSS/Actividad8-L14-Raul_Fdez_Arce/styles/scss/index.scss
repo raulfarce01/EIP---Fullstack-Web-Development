@@ -1,0 +1,188 @@
+@import "variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 20px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(35, 35, 94);
+        color: $fondo;
+        padding: 10px 0;
+        font-weight: 400;
+        position: sticky;
+        top: 0;
+
+        h2 {
+            display: inline;
+        }
+    }
+
+    .hamburguesa {
+        @extend %borde-gris;
+        @extend %flex-center;
+        width: 30px;
+        font-size: 1.3em;
+        margin-right: 20px;
+        cursor: pointer;
+        padding: 5px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    width: 200px;
+    color: $fondo;
+    margin-left: 15px;
+}
+
+main {
+    h1 {
+        display: inline;
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+    h2 {
+        display: inline;
+    }
+
+    .content {
+        height: 60vh;
+        @extend %flex-center;
+        flex-direction: column;
+
+        p {
+            font-size: 1.3em;
+            width: 50%;
+            text-align: center;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            padding: 1%;
+        }
+
+        .buttons {
+            margin-top: 10px;
+
+            button {
+                border: 0;
+                border-radius: 5px;
+                font-size: 1em;
+                cursor: pointer;
+            }
+
+            button:first-child {
+                background-color: blue;
+                color: $letras;
+                padding: 10px 40px;
+            }
+
+            button:nth-child(2) {
+                background-color: gray;
+                color: $letras;
+                padding: 10px 40px;
+            }
+        }
+    }
+
+    .thumbnails {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        flex-wrap: wrap;
+
+        .col {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .thumbnail {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 1px solid gray;
+                border-radius: 5px;
+                margin-bottom: 10px;
+
+                .imgContainer {
+                    width: 100%;
+                    @extend %flex-center;
+                    background-color: $gris;
+                    padding: 10px;
+                    border: 5px;
+                }
+
+                .contentThumb {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    flex-direction: column;
+
+                    .buttonsThumbnails {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 10px;
+
+                        .time {
+                            font-style: italic;
+                        }
+
+                        .viewEdit {
+                            @extend %flex-center;
+
+                            .view,
+                            .edit {
+                                margin: 0;
+                                background-color: transparent;
+                                cursor: pointer;
+                            }
+
+                            .view {
+                                padding: 5px;
+                                border-radius: 5px 0 0 5px;
+                                @extend %borde-gris;
+                                /* border-left: 1px solid $gris;
+                                border-bottom: 1px solid $gris; */
+                            }
+
+                            .edit {
+                                padding: 5px;
+                                border-radius: 0 5px 5px 0;
+                                border-top: 1px solid $gris;
+                                border-right: 1px solid $gris;
+                                border-bottom: 1px solid $gris;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
