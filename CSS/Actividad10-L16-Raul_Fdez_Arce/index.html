@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta Flama</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-500 flex justify-center items-center min-h-screen px-16 py-8">
+    
+    <main class="bg-zinc-200 h-screen w-screen flex justify-center items-center relative">
+
+        <div id="imagen" class="mx-10">
+            <img src="./assets/camisetaFlama.jpeg" alt="Camiseta to flama tt">
+        </div>
+
+        <div id="info" class="flex justify-around flex-col h-full mr-4">
+            <div id="texto">
+                <h3 class="font-bold text-lg mr-16">Camiseta de Autista que nadie se compraría porque se reirían de él ;( (pero ta flama)</h3>
+                <p id="price" class="text-lg">0.05€</p>
+            </div>
+
+            <div id="review" class="flex">
+                <div id="stars" class="flex mr-3">
+                    <div id="star">★</div>
+                    <div id="star">★</div>
+                    <div id="star">★</div>
+                    <div id="star">★</div>
+                    <div id="star" class="text-slate-400">★</div>
+                </div>
+
+                <div id="number">
+                    <p>0 Visitas</p>
+                </div>
+            </div>
+
+            <div id="colors" class="flex flex-col">
+                <p>Coló</p>
+                <div id="selection" class="flex">
+                    <div class="rounded-full w-10 h-10 m-2 bg-gray-950 cursor-pointer" id="color"></div>
+                    <div class="rounded-full w-10 h-10 m-2 bg-gray-50 cursor-pointer" id="color"></div>
+                    <div class="rounded-full w-10 h-10 m-2 bg-red-500 border-2 border-sky-700 cursor-pointer" id="color"></div>
+                </div>
+            </div>
+
+            <div id="sizes" class="flex flex-col">
+                <div class="flex justify-between">
+                    <p>Talla</p>
+                    <p class="cursor-pointer text-sky-700 font-bold">Guía de Tallas</p>
+                </div>
+                <div id="selectTalla" class="flex flex-wrap pt-2 justify-around">
+                    <div id="talla" class="border border-gray-700 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center">
+                        <p>XXS</p>
+                    </div>
+                    <div id="talla" class="border border-gray-700 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center">
+                        <p>XS</p>
+                    </div>
+                    <div id="talla" class="border border-gray-700 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center">
+                        <p>S</p>
+                    </div>
+                    <div id="talla" class="border-2 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center border-blue-700">
+                        <p>M</p>
+                    </div>
+                    <div id="talla" class="border border-gray-700 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center">
+                        <p>L</p>
+                    </div>
+                    <div id="talla" class="border border-gray-700 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center">
+                        <p>XL</p>
+                    </div>
+                    <div id="talla" class="border border-gray-700 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center">
+                        <p>XXL</p>
+                    </div>
+                    <div id="talla" class="border border-gray-700 w-1/5 h-8 m-1 cursor-pointer rounded-sm text-center">
+                        <p>XXXL</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="compra" class="m-2 bg-blue-700 text-white py-3 rounded-sm">Tirar mi dinero a la basura</button>
+
+        </div>
+
+        <button id="exit" class="absolute top-2 right-4 text-2xl text-gray-400">X</button>
+
+    </main>
+
+</body>
+</html>
