@@ -1,0 +1,35 @@
+Acceder a elementos:
+
+document.getElementById()
+document.getElementsByTagName()
+document.getElementsByName()
+document.getElementsByClassName()
+document.querySelector()
+document.querySelectorAll()
+
+
+Crear/borrar elemento y inserarlo
+
+document.createElement()
+document.removeChild()
+<elemento-seleccionado>.append()
+<elemento-seleccionado>.appendChild()
+<elemento-seleccionado>.prepend()
+
+Acceder al valor
+Si es input -> <input-seleccionado>.value
+Si es p, h1, span etc -> <elemento-seleccionado>.textContent
+
+<elemento-seleccionado>.innerHTML -> devuelve también los html tag que están dentro de ese elemento (si no hay tags dentro del elemento seleccionado, el resultado de textContent = resultado de innerHTML)
+
+<element>.addEventListener(<listener type>, <function to call>)
+Ejemplo de listener types: 
+ - click
+ - dbclick
+ - focus
+ - keydown
+ - mouseenter
+...
+
+Setear atributos
+<element>.setAttribute(<atributo>, <valor>)

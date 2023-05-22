@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+			<title>
+				Counter
+			</title>
+		</head>
+		<style>
+			#counter {
+				text-align: center;
+			}
+			.btn-primary {
+				width: 40px;
+				height: 40px;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		</style>
+
+		<body>
+			<div id="counter" class="container">
+				<button class="btn btn-primary" id="increment">+</button>
+				<span>0</span>
+				<button class="btn btn-primary" id="decrement">-</button>
+			</div>
+			<script>
+				const addBtn = document.getElementById("increment")
+				// document.querySelector("#increment")
+				const minusBtn = document.getElementsByTagName("button")[1]
+				const counterOutput = document.getElementsByTagName("span")[0]
+
+				let counter = 0
+
+				function updateStyles (counter) {
+					if(counter < 0) {
+						counterOutput.style.color = 'red'
+					} else {
+						counterOutput.style.color = 'green'
+					}
+				}
+
+				function incrementCount () {
+					counter++;
+					counterOutput.textContent = counter
+					updateStyles(counter)
+				}
+
+				addBtn.addEventListener("click", incrementCount)
+				
+
+				minusBtn.addEventListener("click", () => {
+					counter--;
+					counterOutput.textContent = counter
+					updateStyles(counter)
+				})
+
+
+			</script>
+		</body>
+	</html>
