@@ -1,0 +1,11 @@
+<!-- <p class="text-center text-4xl font-bold text-yellow-500 w-80 m-auto my-4">Digimon</p>
+ -->
+
+ <img src="../../../assets/imgs/Digimon_Logo.webp" alt="Digimon Logo" class="w-60 m-auto my-4">
+<p class="absolute top-0 right-0 px-2">{{date | date: 'mediumDate'}}</p>
+
+<div class="digimon-list flex flex-row gap-2 flex-wrap justify-center mb-4">
+
+    <app-digimon-card class="w-80" [digimon]="digimon" *ngFor="let digimon of digimons"></app-digimon-card>
+
+</div>
