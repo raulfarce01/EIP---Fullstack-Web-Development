@@ -1,0 +1,30 @@
+.navbar a.link{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    padding: 7px 20px;
+}
+.navbar a.link:hover{
+    text-decoration: underline;
+
+}
+
+main{
+    min-height: 80vh;
+    padding: 30px;
+}
+
+nav>a{
+    padding-left: 10px;
+}
+
+.enlace{
+    padding: 7px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+a.active {
+    color: grey;
+}
