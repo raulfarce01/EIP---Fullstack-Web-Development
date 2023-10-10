@@ -1,0 +1,43 @@
+.navbar a.link{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    padding: 7px 20px;
+}
+.navbar a.link:hover{
+    text-decoration: underline;
+
+}
+
+main{
+    min-height: 80vh;
+    padding: 30px;
+}
+
+.imagen{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenTocha{
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+    /* margin: center; */
+}
+
+.m-center{
+    margin: auto;
+}
+
+.fit-content{
+    width: fit-content;
+}

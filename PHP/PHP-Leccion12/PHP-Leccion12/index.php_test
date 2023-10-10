@@ -1,0 +1,26 @@
+<?php
+
+    $method = $_SERVER['REQUEST_METHOD'];
+    $uri = $_SERVER['REQUEST_URI'];
+
+   /*  echo "<pre>";
+        print_r($_SERVER);
+    echo "</pre>"; */
+
+    if ($method == 'GET' && $uri == '/projects/EIP---Fullstack-Web-Development/PHP/PHP-Leccion12/'){
+
+        require_once "./view/form.php";
+
+    }
+
+    if ($method == 'POST' &&  $uri == '/projects/EIP---Fullstack-Web-Development/PHP/PHP-Leccion12/user'){
+
+        session_start();
+        $_session['user'] = $_POST['email'];
+        $_session['password'] = $_POST['password'];
+
+        require_once "./view/user.php";
+
+    }
+
+?>

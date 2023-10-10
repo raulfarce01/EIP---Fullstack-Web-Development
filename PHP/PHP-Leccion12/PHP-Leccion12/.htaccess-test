@@ -1,0 +1,58 @@
+# Dominio a WWW
+# RewriteEngine On
+# RewriteCond %{HTTP_HOST} !^www\.
+# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1
+
+# Dominio a HTTPS
+# RewriteEngine On
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://www.midominio.com/$1
+
+# --------------------------------------------------------
+
+# Error Page
+ErrorDocument 404 /not-found.php
+
+# --------------------------------------------------------
+
+# URL amigable
+# Entrada: post/id/ 
+# Salida: post.php?id=id
+
+# RewriteEngine On
+# RewriteRule ^post/(\w+)/?$ post.php?id=1&&tipo=c
+
+# -------------------------------------------------------
+
+# URL amigable
+# Entrada: post/id/ 
+# Salida: post.php?id=id
+
+# RewriteEngine On
+# RewriteRule ^post/(\w+)/?$ post.php?id=1&&tipo=c
+
+# -------------------------------------------------------
+
+# Redirección a Index
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
